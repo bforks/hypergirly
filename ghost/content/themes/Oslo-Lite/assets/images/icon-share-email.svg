@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="22px" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>icon-share-email</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="icon-share-email" sketch:type="MSLayerGroup" transform="translate(1.000000, 3.000000)" fill="#BBBBBB">
+            <path d="M7.06898032,8.41948573 L10.0654202,11.2472213 L10.1191871,11.3154976 C10.171681,11.3154976 10.1622007,11.278921 10.1622007,11.278921 L13.2938868,8.35914475 L21.0154459,15.970779 L0.0159722222,16 L7.06898032,8.41948573 Z M14.0479324,7.44547434 L21.0305556,0.915630612 L20.9846946,14.9580713 L14.0479324,7.44547434 Z M6.18506626,7.42847973 L0.141688278,0.869048256 C0.141688278,0.869048256 0.127316509,4.33644016 0.115512419,7.80480648 C0.104652092,10.9958831 0.100402777,14.9580713 0.100402777,14.9580713 L6.18506626,7.42847973 Z M10.1206492,9.32551866 L20.9557522,0.0141825545 L0.201488411,0 L10.1206492,9.32551866 Z" id="Path" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

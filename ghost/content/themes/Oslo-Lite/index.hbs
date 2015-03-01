@@ -1,0 +1,43 @@
+{{!< default}}
+
+<section id="entries" data-columns="2">
+  {{#foreach posts}}
+    <article id="post-{{id}}" class="post type-post entry has-meta has-share">
+      <header class="entry-header">
+        <h1 class="entry-title"><a href="{{url}}" rel="bookmark">{{title}}</a></h1>
+      </header>
+
+      <div class="entry-content">
+        {{content}}
+      </div>
+
+      <footer class="entry-meta">
+        <div class="entry-meta-wrap">
+
+          <div class="entry-meta-items">
+            <div class="entry-meta-item entry-date">
+              <span class="entry-meta-title">Published:</span>
+              <span class="entry-date-published">
+                <a href="{{url}}" rel="bookmark">
+                  <time datetime="{{date published_at format="MMMM DD, YYYY"}}">
+                    {{date published_at format="MMMM DD, YYYY"}}
+                  </time>
+                </a>
+              </span>
+            </div>
+          </div>
+
+          {{> share-widget}}
+
+        </div>
+      </footer>
+
+      {{#if featured}}
+        <div class="entry-sticky"></div>
+      {{/if}}
+
+    </article>
+  {{/foreach}}
+</section>
+
+{{pagination}}

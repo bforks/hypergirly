@@ -1,0 +1,21 @@
+{{!< default}}
+
+<header class="page-header">
+  <div class="page-header-body">
+    <h1 class="page-title">{{code}}</h1>
+    <h2 class="error-message">{{message}}</h2>
+
+    {{#if stack}}
+    <h3>Stack Trace</h3>
+    <ul class="error-stack-list">
+      {{#foreach stack}}
+        <li>
+          at
+          {{#if function}}<em class="error-stack-function">{{function}}</em>{{/if}}
+          <span class="error-stack-file">({{at}})</span>
+        </li>
+      {{/foreach}}
+    </ul>
+    {{/if}}
+  </div>
+</header>

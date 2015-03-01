@@ -1,0 +1,60 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! The big featured header on the homepage, with the site logo and description }}
+
+<body class="home blog">
+<hr/>
+<div id="content" class="c">
+    
+        <div id="b-masonry" class="b-masonry">
+
+            {{#foreach posts}}
+
+            
+                <article class="t b-33">
+                    <header class="entry-header">
+                        <a class="image" itemprop="url" href="{{url}}" title="{{title}}" rel="bookmark">
+                            <div class="featured" itemprop="image"alt="featured"  />{{content words="0"}}
+                            </div>
+                        </a>
+                <h2 id="s-next" itemprop="name" class="entry-title">
+                    <a itemprop="url" href="{{url}}" title="{{title}}" rel="bookmark">
+                        <span>{{title}}</span>
+                    </a>
+                </h2>
+                    </header>
+                
+                <div itemprop="description" class="entry-content  b-ellipsis">
+                        <p>{{excerpt words='38'}}</p>
+                </div>
+                 
+                 <footer class="entry-footer t-f">
+                   <p class="entry-date">
+                     {{date published_at format="MMMM DD, YYYY"}}
+                   </p> 
+                   
+                   <p class="entry-author" itemprop="author" itemscope>
+                            <span itemprop="name">By {{author.name}}</span>
+                  </p> 
+                 </footer>
+                </article>
+            
+                <hr/>
+
+
+           {{/foreach}}
+
+
+        
+        
+</div>   
+
+<nav id="np" class="pn">
+            <span class="pn-p">{{pagination}}</span>       </nav>
+
+   
+
+</div>

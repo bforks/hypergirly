@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Styles'n'Scripts }}
+<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'/>
+
+
+<link rel="stylesheet" type="text/css" media="all" href="{{asset "css/style.css"}}"/>
+
+<script type="text/javascript">
+    document.createElement('header');
+    document.createElement('footer');
+    document.createElement('nav');
+    document.createElement('article');
+    document.createElement('section');
+    document.createElement('aside');
+</script>
+
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="home blog">
+
+<header class="h">
+
+    {{#if @blog.logo}}<h1>
+        <a href="{{@blog.url}}" title="{{@blog.title}}">
+            <span>
+                <img src="{{@blog.logo}}" alt="Logo">
+            </span>
+        </a>
+    {{/if}}</h1>
+     {{#if @blog.title}}<h1>
+        <a href="{{@blog.url}}" title="{{@blog.title}}">
+               {{@blog.title}}
+        </a>
+    </h1>{{/if}}
+
+      {{#if @blog.description}}<div class='description1'><h5>
+        
+               {{@blog.description}}
+       
+    </h5></div>{{/if}}
+    
+    <nav class="h_nav">
+        <ul id="menu1" class="menu1">
+            <li >
+                <a href="#" title="Home">
+                    <span>
+                        I<span>ndex</span>
+                    </span>
+                </a>
+            </li>
+            <li >
+                <a href="about" title="About">
+                    <span>
+                        A<span>bout</span>
+                    </span>
+                </a>
+            </li>
+            <li >
+                <a href="#">
+                    <span>
+                        S<span>uggest</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="http://twitter.com/#">
+                    <span>
+                        T<span>witter</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.facebook.com/#">
+                    <span>
+                        F<span>acebook</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/rss" title="Subscribe to RSS Feed">
+                    <span>
+                        S<span>ubscribe</span>
+                    </span>
+                </a>
+            </li>
+           
+        </ul>
+    </nav>
+    
+</header>
+
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/jquery-1.7.2.min.js"}}"></script>
+<script type="text/javascript" src="{{asset "js/autoellipsis.min.js"}}"></script>
+<script type="text/javascript" src="{{asset "js/masonry.min.js"}}"></script>
+<script type="text/javascript" src="{{asset "js/s.js"}}"></script>
+
+</body>
+</html>

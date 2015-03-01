@@ -1,0 +1,16 @@
+<nav class="paging paging-index {{#if next}}has-next{{/if}} {{#if prev}}has-prev{{/if}}" role="navigation">
+  <h1 class="screen-reader-text">Pagination</h1>
+  <div class="nav-links">
+    {{#if prev}}
+      <div class="nav-previous"><a href="{{page_url prev}}">&larr; Newer Posts</a></div>
+    {{/if}}
+
+    {{#if next}}
+      <div class="nav-next"><a href="{{page_url next}}">Older Posts &rarr;</a></div>
+    {{/if}}
+  </div>
+</nav>
+
+<div class="paging paging-end {{#if next}}has-next{{/if}} {{#if prev}}has-prev{{/if}}">
+  No more posts
+</div>

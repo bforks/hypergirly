@@ -1,0 +1,58 @@
+{{!< default}}
+
+{{#post}}
+
+  <article id="post-{{id}}" class="post type-post entry has-meta has-share">
+    <header class="entry-header">
+      <h1 class="entry-title">{{title}}</h1>
+    </header>
+
+    <div class="entry-content">
+      {{content}}
+    </div>
+
+    <footer class="entry-meta">
+      <div class="entry-meta-wrap">
+
+        <div class="entry-meta-items">
+          <div class="entry-meta-item entry-date">
+            <span class="entry-meta-title">Published:</span>
+            <span class="entry-date-published">
+              <time datetime="{{date published_at format="MMMM DD, YYYY"}}">
+                {{date published_at format="MMMM DD, YYYY"}}
+              </time>
+            </span>
+          </div>
+
+          {{#if tags}}
+          <div class="entry-meta-item entry-tags">
+            <span class="entry-meta-title">Tags:</span>
+            <span class="entry-tags-links">
+              {{ tags separator = " " }}
+            </span>
+          </div>
+          {{/if}}
+
+        </div>
+
+        {{> share-widget}}
+
+      </div>
+    </footer>
+
+    <!-- Disqus Comments -->
+    <!-- <div class="entry-comments">
+      <h2>Comments</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">var disqus_shortname = 'DISQUS SHORTNAME';
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();</script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a class="dsq-brlink" href="http://disqus.com">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div> -->
+
+  </article>
+
+{{/post}}

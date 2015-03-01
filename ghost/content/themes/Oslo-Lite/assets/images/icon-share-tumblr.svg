@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="22px" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>icon-share-tumblr</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="icon-share-tumblr" sketch:type="MSLayerGroup" transform="translate(2.000000, 1.000000)" fill="#3B5A74">
+            <path d="M0,0 L0,20 L20,20 L20,0 L0,0 Z M12.32,14.3824211 C11.2034737,14.4118947 10.9872632,13.5978947 10.9777895,13.0068421 L10.9777895,8.90726316 L13.5802105,8.90726316 L13.5802105,6.53136842 L10.9884211,6.53136842 L10.9884211,3 L8.84484211,3 C8.81147368,3 8.75273684,3.02968421 8.74452632,3.10431579 C8.62463158,4.19178947 8.11547368,6.10063158 6,6.86326316 L6,8.90726316 L7.61031579,8.90726316 L7.61031579,13.2229474 C7.61031579,14.7828421 8.56284211,16.9996842 11.6010526,16.9475789 C12.6261053,16.9301053 13.8650526,16.5007368 14.1170526,16.1307368 L13.446,14.1415789 C13.1863158,14.2648421 12.6906316,14.3725263 12.32,14.3824211 Z" id="Rectangle-14" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,127 @@
+<!DOCTYPE html><!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7 lt-ie10 lt-ie11"></html><![endif]--><!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie10 lt-ie11"></html><![endif]--><!--[if IE 8]><html class="no-js lt-ie9 lt-ie10 lt-ie11"></html><![endif]--><!--[if IE 9]><html class="no-js lt-ie10 lt-ie11"></html><![endif]--><!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]--><!--
+==========================================================================
+ ____                     ___       __  __
+/\  _`\  __              /\_ \     /\ \/\ \          __
+\ \ \L\ \\_\  __  _    __\//\ \    \ \ \ \ \    ___ /\_\    ___    ___
+ \ \ ,__//\ \/\ \/'\ /'__`\\ \ \    \ \ \ \ \ /' _ `\/\ \  / __`\/' _ `\
+  \ \ \/ \ \ \/>  <//\  __/ \_\ \_   \ \ \_\ \/\ \/\ \ \ \/\ \L\ \\ \/\ \
+   \ \_\  \ \_\\_/\_\ \____\/\____\   \ \_____\ \_\ \_\ \_\ \____/ \_\ \_\
+    \/_/   \/_///\/_/\/____/\/____/    \/_____/\/_/\/_/\/_/\/___/ \/_/\/_/
+==========================================================================
+   Oslo Lite v1.1.1
+   Updated: 24 February, 2015
+   Website: https://www.pixelunion.net
+==========================================================================
+-->
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="{{meta_description}}" name="description" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <title>{{meta_title}}</title>
+  <link href="{{asset '/favicon.ico'}}" rel="shortcut icon" /> <!-- Requires .favicon in assets folder -->
+  <link href="/rss" rel="alternate" type="application/rss+xml" />
+
+  <!-- Facebook OG -->
+  <meta content="blog" property="og:type" />
+  <meta content="{{meta_description}}" property="og:description" />
+  <meta content="{{@blog.logo}}" property="og:image" />
+
+  {{#foreach posts}}
+    <meta content="article" property="og:type" />
+    <meta content="{{url absolute='true'}}" property="og:url" />
+    <meta content="{{encode excerpt words='30'}}" property="og:description" />
+    <meta content="{{encode title}}" property="og:title" />
+    <meta content="{{@blog.url}}/{{@blog.logo}}" property="og:image" />
+  {{/foreach}}
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="{{asset 'css/theme.css'}}" />
+
+  <!-- Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,300|Droid+Serif:400,400italic,700,700italic'" rel="stylesheet" type="text/css" />
+
+
+  {{ghost_head}}
+
+  <!-- [Port: WP Footer] -->
+
+</head>
+<body class="{{body_class}}">
+
+  <div id="page" class="hfeed site">
+
+    <div id="secondary">
+
+      <a id="widgets-open">
+        <span class="screen-reader-text">Show navigation</span>
+        <img src="{{asset '/images/icon-menu.svg'}}">
+      </a>
+
+      {{> sidebar}}
+
+      <div id="secondary-main">
+        <header id="masthead" role="banner" class="site-branding">
+          {{#if @blog.logo}}
+            <a class="site-logo" href="/" rel="home">
+              <img src="{{@blog.logo}}" alt="{{meta_description}}">
+            </a>
+          {{/if}}
+
+
+          {{^if @blog.logo}}
+            <h1 class="site-title"><a href="/" rel="home">{{@blog.title}}</a></h1>
+            {{#if @blog.description}}
+              <h2 class="site-description">{{@blog.description}}</h2>
+            {{/if}}
+          {{/if}}
+        </header>
+      </div>
+
+      {{#if @blog.cover}}
+        <div id="header-image">
+          <canvas class="header-image-blur" data-src="{{@blog.cover}}" data-blur="30"></canvas>
+          <canvas class="header-image-main" data-src="{{@blog.cover}}"></canvas>
+        </div>
+      {{/if}}
+    </div>
+
+    <main id="content" role="main">
+      {{{body}}}
+    </main>
+  </div><!-- #page -->
+
+  <footer id="colophon" role="contentinfo">
+
+    {{> social-links}}
+
+    <div class="site-credits">
+      <a href="http://pixelunion.net/" rel="designer">Oslo Theme by Pixel Union</a>
+    </div>
+
+  </footer>
+
+  {{ghost_foot}}
+
+  <!-- Theme JS -->
+  <script type="text/javascript">
+    window.options = {};
+    options.blogUrl = "{{@blog.url}}";
+  </script>
+
+  <script src="{{asset 'js/script.js'}}" type="text/javascript"></script>
+
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+    var _gaq=[['_setAccount','TRACKING ID'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+  <!-- Twitter Widgets / Intents -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="22px" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>icon-share-default</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="icon-share-default" sketch:type="MSLayerGroup" transform="translate(0.000000, 2.000000)" fill="#BBBBBB">
+            <path d="M5.99763793,7.72462447 C9.59133532,4.71924978 13.8318954,4.46952542 13.8318954,4.46952542 L13.8428055,-2.62416351e-16 L22.2393102,7.28438736 L13.8318954,15.124888 L13.8318954,10.5437442 C13.8318954,10.5437442 10.9676776,10.598451 8.09588594,11.6800828 C5.22409423,12.7617146 0.6760942,16.6570638 0.6760942,16.6570638 C0.6760942,16.6570638 2.40394087,10.7299995 5.99763793,7.72462447 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

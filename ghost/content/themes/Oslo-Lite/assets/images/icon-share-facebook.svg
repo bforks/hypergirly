@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="22px" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>icon-share-facebook</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="icon-share-facebook" sketch:type="MSLayerGroup" transform="translate(2.000000, 1.000000)" fill="#3B5998">
+            <path d="M1.99217763,0 C0.891928307,0 0,0.898212381 0,1.99079514 L0,18.0092049 C0,19.1086907 0.885795838,20 1.99217763,20 L18.0217113,20 C19.1219606,20 20.0138889,19.1017876 20.0138889,18.0092049 L20.0138889,1.99079514 C20.0138889,0.891309342 19.1280931,0 18.0217113,0 L1.99217763,0 Z M14.2849409,10.8984361 C14.2849409,14.5718095 14.2858294,18 14.2858294,18 L10.7077636,18 C10.7077636,18 10.7068752,14.6161164 10.7068752,10.8984361 L9.00624997,10.8984361 L9.00624997,8.0020752 L10.7068752,8.0020752 L10.7068752,6.43789018 C10.7068752,5.09637456 11.37593,3 14.3178162,3 L16.9673796,3.00984599 L16.9673796,5.82087505 L15.0437361,5.82087505 C14.7300889,5.82087505 14.2858295,5.97102633 14.2858295,6.61019494 L14.2858295,8.0020752 L17.0118055,8.0020752 L16.6990469,10.8984361 L14.2849409,10.8984361 Z" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
