@@ -45,7 +45,16 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://hypergirly.com',
-        mail: {},
+        mail: {
+              transport: 'SMTP',
+              options: {
+                  service: 'Mailgun',
+                  auth: {
+                      user: 'postmaster@hypergirly.com', // mailgun username
+                      pass: '9m7vmugaxau4'  // mailgun password
+                  }
+              }
+        },
         database: {
             client: 'sqlite3',
             connection: {

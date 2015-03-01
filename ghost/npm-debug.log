@@ -1,27 +1,23 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'start' ]
-2 info using npm@1.3.24
-3 info using node@v0.10.25
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', '-g', 'remove', 'forever' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
 4 verbose node symlink /usr/bin/node
-5 verbose run-script [ 'prestart', 'start', 'poststart' ]
-6 info prestart ghost@0.4.1
-7 info start ghost@0.4.1
-8 verbose unsafe-perm in lifecycle true
-9 info ghost@0.4.1 Failed to exec start script
-10 error ghost@0.4.1 start: `node index`
-10 error Exit status 8
-11 error Failed at the ghost@0.4.1 start script.
-11 error This is most likely a problem with the ghost package,
-11 error not with npm itself.
-11 error Tell the author that this fails on your system:
-11 error     node index
-11 error You can get their info via:
-11 error     npm owner ls ghost
-11 error There is likely additional logging output above.
+5 verbose lib/node_modules/forever unbuild
+6 info preuninstall forever@0.14.1
+7 info uninstall forever@0.14.1
+8 verbose true,/usr/lib/node_modules,/usr/lib/node_modules unbuild forever@0.14.1
+9 verbose /usr/bin,[object Object] binRoot
+10 error Error: EACCES, unlink '/usr/bin/forever'
+10 error  { [Error: EACCES, unlink '/usr/bin/forever'] errno: 3, code: 'EACCES', path: '/usr/bin/forever' }
+11 error Please try running this command again as root/Administrator.
 12 error System Linux 3.2.0-24-virtual
-13 error command "/usr/bin/node" "/usr/bin/npm" "start"
+13 error command "/usr/bin/node" "/usr/bin/npm" "-g" "remove" "forever"
 14 error cwd /home/brittany/www/hypergirly.com/ghost
-15 error node -v v0.10.25
-16 error npm -v 1.3.24
-17 error code ELIFECYCLE
-18 verbose exit [ 1, true ]
+15 error node -v v0.10.33
+16 error npm -v 1.4.28
+17 error path /usr/bin/forever
+18 error code EACCES
+19 error errno 3
+20 error stack Error: EACCES, unlink '/usr/bin/forever'
+21 verbose exit [ 3, true ]
