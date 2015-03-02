@@ -32,7 +32,7 @@ content = function (options) {
             downsize(this.html, truncateOptions)
         );
     } else if (truncateOptions.hasOwnProperty('preview')) {
-        var url = config.urlFor('post', {post: this}, absolute);
+        var url = config.urlFor('post', {post: this}, true);
         var split = this.html.split('<!--preview-->', 2);
         var output = split[0];
         if (split[1]) {
