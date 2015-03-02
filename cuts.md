@@ -35,3 +35,5 @@ Locate ghost/core/server/helpers/content.js file.
     }
 
 After we modify all the files and restart Ghost (sudo service restart ghost), we can use it in the editor. Take one of your posts and put <!--preview--> somewhere in it. Save it and refresh your main blog page.
+
+original post: http://spiralcodestudio.com/manual-post-cut-for-ghost/
