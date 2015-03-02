@@ -36,7 +36,7 @@ content = function (options) {
         var split = this.html.split('<!--preview-->', 2);
         var output = split[0];
         if (split[1]) {
-            output += '<div class="continue"><a href="' + url + '">● ● ●</div>';
+            output += '<div class="continue"><a href="' + url + '">~read more~</div>';
         }
         return new hbs.handlebars.SafeString(output);
     }
