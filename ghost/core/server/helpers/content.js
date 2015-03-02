@@ -14,7 +14,7 @@ var hbs             = require('express-hbs'),
 
 content = function (options) {
     var truncateOptions = (options || {}).hash || {};
-    truncateOptions = _.pick(truncateOptions, ['words', 'characters']);
+    truncateOptions = _.pick(truncateOptions, ['words', 'characters', 'preview']);
     _.keys(truncateOptions).map(function (key) {
         truncateOptions[key] = parseInt(truncateOptions[key], 10);
     });
@@ -31,20 +31,15 @@ content = function (options) {
             downsize(this.html, truncateOptions)
         );
     } else if (truncateOptions.hasOwnProperty('preview')) {
-        return new hbs.handlebars.SafeString(
-            'ass'
-        );
-
-        // var split = this.html.split('<!--preview-->', 2)
-        // var output = split[0]
-        // if (split[1]) {
-        //     output += '<div class="continue">● ● ●</div>'
-        // }
-        // return new hbs.handlebars.SafeString(output)
+        var split = this.html.split('<!--preview-->', 2)
+        var output = split[0]
+        if (split[1]) {
+            output += '<div class="continue">● ● ●</div>'
+        }
+        return new hbs.handlebars.SafeString(output)
     }
 
-    return new hbs.handlebars.SafeString(JSON.stringify(truncateOptions));
-//    return new hbs.handlebars.SafeString(this.html);
+    return new hbs.handlebars.SafeString(this.html);
 };
 
 module.exports = content;
