@@ -43,8 +43,7 @@ content = function (options) {
         // return new hbs.handlebars.SafeString(output)
     }
 
-    return new hbs.handlebars.SafeString(JSON.stringify(truncateOptions));
-//    return new hbs.handlebars.SafeString(this.html);
+    return new hbs.handlebars.SafeString(this.html);
 };
 
 module.exports = content;
