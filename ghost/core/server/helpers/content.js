@@ -30,6 +30,13 @@ content = function (options) {
         return new hbs.handlebars.SafeString(
             downsize(this.html, truncateOptions)
         );
+    } else if (truncateOptions.hasOwnProperty('preview')) {
+        var split = this.html.split('<!--preview-->', 2)
+        var output = split[0]
+        if (split[1]) {
+            output += '<div class="continue">● ● ●</div>'
+        }
+        return new hbs.handlebars.SafeString(output)
     }
 
     return new hbs.handlebars.SafeString(this.html);
